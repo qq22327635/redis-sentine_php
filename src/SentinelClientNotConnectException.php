@@ -1,5 +1,5 @@
 <?php
-namespace Jenner\RedisSentinel;
+namespace huangyunjian\RedisSentinel;
 
 
 class SentinelClientNotConnectException extends \RedisException

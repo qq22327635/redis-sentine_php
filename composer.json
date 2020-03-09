@@ -20,8 +20,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Jenner\\RedisSentinel\\": "./src",
-            "Jenner\\RedisSentinel\\Test\\": "./tests"
+            "huangyunjian\\RedisSentinel\\": "./src",
+            "huangyunjian\\RedisSentinel\\Test\\": "./tests"
         }
     }
 }

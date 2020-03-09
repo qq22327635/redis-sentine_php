@@ -28,7 +28,7 @@ function redis_nodeinfo(){
     foreach($random as $key){
         $ips[$temp_data[$key]['ip']]=['port'=>$temp_data[$key]['port']];
     }
-    $sentinel = new \Jenner\RedisSentinel\Sentinel();
+    $sentinel = new \huangyunjian\RedisSentinel\Sentinel();
     foreach($ips as $ip=>$portinfo){
         try{
             $sentinel->connect($ip, $portinfo['port'],1);
@@ -50,7 +50,7 @@ function redis_nodeinfo(){
 
 $address = redis_nodeinfo();
 echo 'redis_ip:' . $address['ip'] . '<br/>';
-//$sentinel = new \Jenner\RedisSentinel\Sentinel();
+//$sentinel = new \huangyunjian\RedisSentinel\Sentinel();
 //$sentinel->connect('101.36.149.189', 26379,1);
 //$address = $sentinel->getMasterAddrByName('myredis');
 //echo $address['ip'];
